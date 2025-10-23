@@ -1,0 +1,46 @@
+DROP TABLE Doctor purge;
+
+CREATE TABLE Doctor(
+   DoctorID INT NOT NULL,
+   DoctorName VARCHAR2(100) NOT NULL,
+   DoctorPhone VARCHAR2(15) NOT NULL,
+   DoctorGender VARCHAR2(10) NOT NULL,
+   DoctorMesub VARCHAR2(100) NOT NULL,
+   DoctorRoom VARCHAR2(10),
+   PRIMARY KEY(DoctorID)
+);
+
+
+INSERT INTO Doctor VALUES (1, 'Jisoo Park', '010-1234-1234', 'Female', 'Cardiology', '101');
+INSERT INTO Doctor VALUES (2, 'Minho Kim', '010-5678-5678', 'Male', 'Dermatology', '102');
+INSERT INTO Doctor VALUES (3, 'Yeji Lee', '010-8765-8765', 'Female', 'Neurology', '103');
+INSERT INTO Doctor VALUES (4, 'Seojin Choi', '010-4321-4321', 'Male', 'Pediatrics', '104');
+INSERT INTO Doctor VALUES (5, 'Haesoo Jung', '010-2468-2468', 'Female', 'Ophthalmology', '105');
+INSERT INTO Doctor VALUES (6, 'Jiwon Kwon', '010-1357-1357', 'Male', 'General Surgery', '106');
+INSERT INTO Doctor VALUES (7, 'Minseok Yoo', '010-9876-9876', 'Male', 'Psychiatry', '107');
+INSERT INTO Doctor VALUES (8, 'Hayoung Han', '010-8642-8642', 'Female', 'Gynecology', '108');
+INSERT INTO Doctor VALUES (9, 'Sangwoo Jeon', '010-7531-7531', 'Male', 'Cardiology', '109');
+INSERT INTO Doctor VALUES (10, 'Taemin Oh', '010-7412-7412', 'Male', 'Endocrinology', '110');
+INSERT INTO Doctor VALUES (11, 'Yuna Kwon', '010-9632-1234', 'Female', 'Neurology', '111');
+INSERT INTO Doctor VALUES (12, 'Donghyun Kim', '010-7532-5678', 'Male', 'Pediatrics', '112');
+INSERT INTO Doctor VALUES (13, 'Jungmin Lee', '010-8523-4567', 'Male', 'Orthopedics', '113');
+INSERT INTO Doctor VALUES (14, 'Soobin Park', '010-1470-9876', 'Female', 'Ophthalmology', '114');
+INSERT INTO Doctor VALUES (15, 'Harin Jeong', '010-3210-6543', 'Female', 'Psychiatry', '115');
+INSERT INTO Doctor VALUES (16, 'Seoyeon Han', '010-2580-3690', 'Female', 'Dermatology', '116');
+INSERT INTO Doctor VALUES (17, 'Jisung Yoo', '010-9513-7531', 'Male', 'Gynecology', '117');
+INSERT INTO Doctor VALUES (18, 'Hyunji Kim', '010-1593-4867', 'Female', 'Cardiology', '118');
+INSERT INTO Doctor VALUES (19, 'Jihyeon Choi', '010-4862-9510', 'Female', 'General Surgery', '119');
+INSERT INTO Doctor VALUES (20, 'Taeyang Jeon', '010-7530-1593', 'Male', 'Endocrinology', '120');
+INSERT INTO Doctor VALUES (21, 'Eunji Baek', '010-3690-7531', 'Female', 'Neurology', '121');
+INSERT INTO Doctor VALUES (22, 'Hyunjin Ko', '010-8523-1234', 'Male', 'Orthopedics', '122');
+INSERT INTO Doctor VALUES (23, 'Yeonhee Park', '010-6547-2580', 'Female', 'Pediatrics', '123');
+INSERT INTO Doctor VALUES (24, 'Jaehyun Bae', '010-9632-1478', 'Male', 'Ophthalmology', '124');
+INSERT INTO Doctor VALUES (25, 'Seunghee Oh', '010-3579-8523', 'Female', 'Psychiatry', '125');
+INSERT INTO Doctor VALUES (26, 'Seongjun Kwon', '010-7410-2580', 'Male', 'Cardiology', '126');
+INSERT INTO Doctor VALUES (27, 'Minseo Choi', '010-1234-3579', 'Female', 'Dermatology', '127');
+INSERT INTO Doctor VALUES (28, 'Jiwon Han', '010-1593-4567', 'Female', 'Gynecology', '128');
+INSERT INTO Doctor VALUES (29, 'Hyeonwoo Kim', '010-7531-8523', 'Male', 'General Surgery', '129');
+INSERT INTO Doctor VALUES (30, 'Jihoon Park', '010-9510-3690', 'Male', 'Endocrinology', '130');
+
+
+commit;

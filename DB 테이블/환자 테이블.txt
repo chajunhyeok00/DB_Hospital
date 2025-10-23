@@ -1,0 +1,47 @@
+DROP TABLE Patient PURGE;
+
+CREATE TABLE Patient (
+    PatientID NUMBER(10) NOT NULL,
+    PatientName VARCHAR2(50) NOT NULL,
+    Gender VARCHAR2(10),
+    NationalID VARCHAR2(20),
+    BloodType VARCHAR2(4),
+    PhoneNumber VARCHAR2(20),
+    Height NUMBER(5,1),
+    Weight NUMBER(5,1),
+    PRIMARY KEY (PatientID),
+    CHECK (BloodType IN ('A', 'B', 'O', 'AB'))
+);
+
+INSERT INTO Patient VALUES (1, 'Eunsoo Oh', '010-5387-0364', 'Female', 'AB', '761011-2641892', 140.9, 50.0);
+INSERT INTO Patient VALUES (2, 'Jihae Nam', '010-3778-4821', 'Female', 'B', '051130-3641892', 175.0, 50.0);
+INSERT INTO Patient VALUES (3, 'Minjun Kim', '010-9876-1234', 'Male', 'O', '920312-1234567', 180.2, 72.5);
+INSERT INTO Patient VALUES (4, 'Seoyeon Lee', '010-1234-5678', 'Female', 'A', '840715-2345678', 158.4, 55.2);
+INSERT INTO Patient VALUES (5, 'Jihun Park', '010-3456-7890', 'Male', 'B', '950901-1122334', 170.0, 68.0);
+INSERT INTO Patient VALUES (6, 'Sujin Jeong', '010-8765-4321', 'Female', 'AB', '990102-3344556', 165.5, 60.3);
+INSERT INTO Patient VALUES (7, 'Junhyuk Choi', '010-6543-2109', 'Male', 'O', '810815-5566778', 175.8, 78.4);
+INSERT INTO Patient VALUES (8, 'Yujin Lee', '010-7410-8523', 'Female', 'A', '021223-1122334', 160.1, 54.7);
+INSERT INTO Patient VALUES (9, 'Jimin Han', '010-8523-7410', 'Female', 'AB', '880101-4433221', 165.9, 59.0);
+INSERT INTO Patient VALUES (10, 'Jeonghoon Bae', '010-9632-1470', 'Male', 'B', '950512-6677889', 172.2, 70.1);
+INSERT INTO Patient VALUES (11, 'Seoyeong Kim', '010-2580-3690', 'Female', 'A', '030102-3344556', 160.5, 52.3);
+INSERT INTO Patient VALUES (12, 'Hayoung Choi', '010-1234-9852', 'Male', 'O', '010901-6677889', 180.7, 82.4);
+INSERT INTO Patient VALUES (13, 'Jihoo Yun', '010-7777-8888', 'Male', 'B', '000101-1122334', 174.9, 69.5);
+INSERT INTO Patient VALUES (14, 'Minji Jang', '010-4567-7890', 'Female', 'AB', '960505-7788990', 155.6, 48.2);
+INSERT INTO Patient VALUES (15, 'Taeyun Kang', '010-8765-4321', 'Male', 'O', '750714-5566778', 185.0, 85.6);
+INSERT INTO Patient VALUES (16, 'Dahi Park', '010-2580-3690', 'Female', 'A', '910123-1122334', 162.3, 56.9);
+INSERT INTO Patient VALUES (17, 'Minho Jeong', '010-1234-5678', 'Male', 'B', '970212-3344556', 170.4, 65.3);
+INSERT INTO Patient VALUES (18, 'Seoyeong Oh', '010-3690-2580', 'Female', 'AB', '900909-7788990', 159.5, 53.8);
+INSERT INTO Patient VALUES (19, 'Seungwoo Lee', '010-8523-7410', 'Male', 'O', '950813-1122334', 182.2, 78.0);
+INSERT INTO Patient VALUES (20, 'Nayeong Yoo', '010-1470-9632', 'Female', 'A', '921201-3344556', 161.9, 57.5);
+INSERT INTO Patient VALUES (21, 'Doyoon Kim', '010-9876-1234', 'Male', 'B', '860701-5566778', 178.8, 74.3);
+INSERT INTO Patient VALUES (22, 'Jisoo Hong', '010-4567-7890', 'Female', 'AB', '820812-6677889', 154.4, 47.5);
+INSERT INTO Patient VALUES (23, 'Jihyun Jeon', '010-9632-1470', 'Female', 'O', '740610-4433221', 168.9, 63.0);
+INSERT INTO Patient VALUES (24, 'Minseong Kang', '010-7410-8523', 'Male', 'A', '890515-7788990', 176.7, 72.8);
+INSERT INTO Patient VALUES (25, 'Jiyeong Yun', '010-3690-2580', 'Female', 'AB', '920623-6677889', 163.5, 58.7);
+INSERT INTO Patient VALUES (26, 'Haneul Im', '010-2580-3690', 'Male', 'O', '931203-1122334', 181.0, 75.6);
+INSERT INTO Patient VALUES (27, 'Yerin Kim', '010-1234-5678', 'Female', 'A', '990401-7788990', 159.7, 54.1);
+INSERT INTO Patient VALUES (28, 'Taejun Lee', '010-4567-7890', 'Male', 'B', '870919-6677889', 171.3, 66.9);
+INSERT INTO Patient VALUES (29, 'Sua Jeong', '010-8523-7410', 'Female', 'AB', '850208-3344556', 165.8, 60.4);
+INSERT INTO Patient VALUES (30, 'Eunji Jang', '010-1470-9632', 'Female', 'O', '820303-7788990', 160.3, 53.6);
+
+COMMIT;

@@ -1,0 +1,47 @@
+ALTER SESSION SET NLS_DATE_FORMAT='YYYY-MM-DD';
+
+DROP TABLE Medical PURGE;
+
+CREATE TABLE Medical (
+    MedicalID NUMBER(15, 0),
+    PatientID NUMBER(15, 0),
+    PatientName CHAR(20) NOT NULL, 
+    DoctorName CHAR(20) NOT NULL, 
+    MedicalDate DATE, 
+    Expense NUMBER(12, 0), 
+    PRIMARY KEY (MedicalID)
+);
+
+INSERT INTO Medical VALUES (1, 12, 'Eunsoo Oh', 'Jisoo Park', '2024-11-01', 1200000);
+INSERT INTO Medical VALUES (2, 3, 'Jihae Nam', 'Minho Kim', '2024-12-02', 3000000);
+INSERT INTO Medical VALUES (3, 17, 'Minjun Kim', 'Yeji Lee', '2024-11-15', 1800000);
+INSERT INTO Medical VALUES (4, 8, 'Seoyeon Lee', 'Seojin Choi', '2024-11-20', 1500000);
+INSERT INTO Medical VALUES (5, 25, 'Jihun Park', 'Haesoo Jung', '2024-12-10', 2200000);
+INSERT INTO Medical VALUES (6, 14, 'Sujin Jeong', 'Jiwon Kwon', '2024-12-05', 2700000);
+INSERT INTO Medical VALUES (7, 21, 'Junhyuk Choi', 'Minseok Yoo', '2024-11-25', 3200000);
+INSERT INTO Medical VALUES (8, 2, 'Yujin Lee', 'Hayoung Han', '2024-12-01', 2400000);
+INSERT INTO Medical VALUES (9, 9, 'Jimin Han', 'Sangwoo Jeon', '2024-11-28', 2600000);
+INSERT INTO Medical VALUES (10, 19, 'Jeonghoon Bae', 'Taemin Oh', '2024-11-30', 1400000);
+INSERT INTO Medical VALUES (11, 5, 'Seoyeong Kim', 'Yuna Kwon', '2024-12-01', 1500000);
+INSERT INTO Medical VALUES (12, 27, 'Hayoung Choi', 'Donghyun Kim', '2024-12-03', 1800000);
+INSERT INTO Medical VALUES (13, 1, 'Jihoo Yun', 'Jungmin Lee', '2024-11-14', 2500000);
+INSERT INTO Medical VALUES (14, 18, 'Minji Jang', 'Soobin Park', '2024-11-22', 1700000);
+INSERT INTO Medical VALUES (15, 6, 'Taeyun Kang', 'Harin Jeong', '2024-11-21', 2600000);
+INSERT INTO Medical VALUES (16, 28, 'Dahi Park', 'Seoyeon Han', '2024-12-06', 3100000);
+INSERT INTO Medical VALUES (17, 16, 'Minho Jeong', 'Jisung Yoo', '2024-12-02', 2400000);
+INSERT INTO Medical VALUES (18, 13, 'Seoyeong Oh', 'Hyunji Kim', '2024-11-26', 2300000);
+INSERT INTO Medical VALUES (19, 30, 'Seungwoo Lee', 'Jihyeon Choi', '2024-11-29', 2900000);
+INSERT INTO Medical VALUES (20, 10, 'Nayeong Yoo', 'Taeyang Jeon', '2024-12-04', 3300000);
+INSERT INTO Medical VALUES (21, 24, 'Doyoon Kim', 'Eunji Baek', '2024-11-18', 2000000);
+INSERT INTO Medical VALUES (22, 4, 'Jisoo Hong', 'Hyunjin Ko', '2024-11-24', 2200000);
+INSERT INTO Medical VALUES (23, 22, 'Jihyun Jeon', 'Yeonhee Park', '2024-12-08', 2500000);
+INSERT INTO Medical VALUES (24, 7, 'Minseong Kang', 'Jaehyun Bae', '2024-11-30', 1500000);
+INSERT INTO Medical VALUES (25, 11, 'Jiyeong Yun', 'Seunghee Oh', '2024-12-01', 1800000);
+INSERT INTO Medical VALUES (26, 23, 'Haneul Im', 'Seongjun Kwon', '2024-11-27', 2600000);
+INSERT INTO Medical VALUES (27, 29, 'Yerin Kim', 'Minseo Choi', '2024-12-09', 2800000);
+INSERT INTO Medical VALUES (28, 15, 'Taejun Lee', 'Jiwon Han', '2024-11-19', 2400000);
+INSERT INTO Medical VALUES (29, 26, 'Sua Jeong', 'Hyeonwoo Kim', '2024-11-17', 3000000);
+INSERT INTO Medical VALUES (30, 20, 'Eunji Jang', 'Jihoon Park', '2024-12-07', 1700000);
+
+
+COMMIT;

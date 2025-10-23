@@ -1,0 +1,21 @@
+DROP TABLE Department purge;
+
+CREATE TABLE Department (
+    DepartmentID NUMBER(10) NOT NULL,
+    DepartmentName VARCHAR(20) NOT NULL,
+    DepartmentPhone VARCHAR(20),
+    PRIMARY KEY (DepartmentID)
+);
+
+INSERT INTO Department VALUES (1, 'Cardiology', '051-8040-5584');
+INSERT INTO Department VALUES (2, 'Neurology', '051-8040-5747');
+INSERT INTO Department VALUES (3, 'Orthopedics', '051-8040-5523');
+INSERT INTO Department VALUES (4, 'Pediatrics', '051-8040-5588');
+INSERT INTO Department VALUES (5, 'Dermatology', '051-8040-5532');
+INSERT INTO Department VALUES (6, 'General Surgery', '051-8040-5540');
+INSERT INTO Department VALUES (7, 'Psychiatry', '051-8040-5567');
+INSERT INTO Department VALUES (8, 'Gynecology', '051-8040-5592');
+INSERT INTO Department VALUES (9, 'Endocrinology', '051-8040-5505');
+INSERT INTO Department VALUES (10, 'Ophthalmology', '051-8040-5578');
+
+commit;
